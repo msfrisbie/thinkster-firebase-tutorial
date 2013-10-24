@@ -1,0 +1,23 @@
+<div class="row" data-ng-controller="SignupCtrl">
+  <div class="span6">
+    <form class="ng-pristine ng-valid">
+      <div class="control-group">
+        <label for="name">Full name</label>
+        <input id="name" type="text" name="name" placeholder="Full name" ng-model="name">
+      </div>
+      <div class="control-group">
+        <label for="email">Email</label>
+        <input id="email" type="text" name="email" placeholder="Email" ng-model="email">
+      </div>
+      <div class="control-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" placeholder="Password" ng-model="pass">
+      </div>
+      <div class="control-group">
+        <button type="submit" class="btn btn-primary" ng-click="createAccount()">Sign up</button>
+        &nbsp;or&nbsp;<a href="#/signin" class="show-login">login</a>
+      </div>
+    </form>
+    <p ng-show="err" class="error">{{err}}</p>
+  </div>
+</div>
